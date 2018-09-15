@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import * as Utils from '../utils'
 
 export default WrappedComponent => {
-  return class extends React.Component {
+  return class extends React.PureComponent {
     constructor(props, context) {
       super(props, context)
       this.state = {
