@@ -4,7 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default (WrappedComponent, PlaceholderComponent) => {
-  return class extends React.Component {
+  return class extends React.PureComponent {
     constructor(props, context) {
       super(props, context)
     }
